@@ -24,14 +24,17 @@ img{
   height: 100px!important;
   
 }
+
 .iiiimg {
   display: inline-block!important;
-  width: 100px;
-  height: 100px;
+  width: 230px;
+  height: 180px;
   padding: 5px;
   float: left;
- 
-
+}
+.iiiimg:nth-child(1) {
+  width: 400px;
+  height: 360px;
 }
 .main_img {
   float: left;
