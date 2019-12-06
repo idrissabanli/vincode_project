@@ -1,0 +1,492 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CoderVin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png'%}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">    <!-- Place favicon.ico in the root directory -->
+  
+    <script src="https://kit.fontawesome.com/89ccb926bc.js" crossorigin="anonymous"></script>
+
+    <!-- CSS here -->
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css'%}">
+        <link rel="stylesheet" href="{% static 'css/nice-select.css'%}">
+        <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+        <link rel="stylesheet" href="{% static 'css/gijgo.css'%}">
+        <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+        <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <link rel="stylesheet" href="{% static 'css/card.css'%}">
+        <link rel="stylesheet" href="{% static 'css/vin_product.css'%}">
+    {% endblock link %}
+
+
+    {% comment %} <script asykc>(function(w, d) { w.CollectId = "5de00b7ac3d67e64ecfc914f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script> {% endcomment %}
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!-- modal -->
+    <div id="openModal-about" class="modalDialog">
+        <div >
+           <a href="#close" title="Close" class="close">X</a>
+           <img src="{% static 'img/1f7ce067b1.jpg'%}" alt="" style="height: 200px; widows: 400px;">
+         </div>
+     </div>
+
+     <!-- nav -->
+     {% block navbar %}
+        {% include "navbar.html" %}
+     {% endblock navbar %}
+    
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    {% block content %}
+    <div class="slider_area">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="slider_text text-center">
+                            <div class="region">
+                                <button class="contry-vivi azerbaycan">Azərbaycan avtomibilleri</button>
+                                <button class="contry-vivi wqw amerika">Amerika avtomibilleri</button>
+                            </div>
+                          
+                           
+                            <div class="find_dowmain">
+                                <form action="#" class="find_dowmain_form">
+                                    <input type="text" placeholder="Avtomobilin vincodun daxil edin...">
+                                    <button  type="submit">Axtar</button>
+                                </form>
+                            </div>
+                            <!-- <button  class="onlayn ode"><a class="a-color-white" href="#openModal-abouttt"> Onlayn ödə</a></button>
+                            <button class="nagd ode"><a class="a-color-white" href="#openModal-aboutttnagd"> Nəğd ödə</a></button> -->
+                        </div>
+                    </div>
+                    <div class="popap"><h4><a class="vini-a-a" href="#openModal-about"> Vincode avtomobilinizdə haradadır?</a></h4></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!-- slider_area_end -->
+
+    <!-- core_features_start -->
+    <div class="core_features">
+        <div class="container">
+            <div class="border-bottm">
+                <div class="row">
+
+                    <div class="col-xl-6 col-md-6">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon"><i class="flaticon-browser"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Xüsusiyyətlər
+                                            </h4>
+                                            <p>Vin vastəsiylə maşının bütün tarixinə baxmaq mümkündür.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon blue"><i class="flaticon-security"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Rəsmi Əməkdaşlıq
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon pink"><i class="flaticon-like"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                30-Day Money-Back Guarantee
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon yellow"><i class="flaticon-lock"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Spam Protection
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon"><i class="flaticon-browser"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Free Domain for 1st Year
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon blue"><i class="flaticon-security"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Free SSL Certificate
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon pink"><i class="flaticon-like"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                30-Day Money-Back Guarantee
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon yellow"><i class="flaticon-lock"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Spam Protection
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- core_features_end -->
+
+    <!-- faq_area_start -->
+    <div class="faq_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="accordion_heading">
+                        <h3>Tez-tez verilən suallar</h3>
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="flaticon-info"></i> Avtomobilin VIN kodunu necə tapmaq olar?
+
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    VIN (və ya - şifrələmədə - Nəqliyyat vasitəsinin şəxsiyyət nömrəsi) - maşınlar haqqında demək olar ki, bütün əsas məlumatları öyrənə biləcəyiniz kod. 17 ədəd və hərfdən ibarətdir.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="flaticon-info"></i>Kodla nə öyrənə bilərsiniz?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion"
+                                >
+                                <div class="card-body">
+                                    Kodunu bilməklə avtomobilin makiyajını və modelini, həmçinin modifikasiyasını, gövdəsinin növünü, qapıların sayını, sürət qutusunun növünü öyrənmək moda olur. Digəri - montaj ölkəsi, istehsal ili, mühərrikin növü və təsviri, digər xüsusiyyətləri. Ümumiyyətlə, satın aldığınız avtomobildə olan bütün əsas məlumatlar.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="flaticon-info"></i> Kod haradadır?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Bu kontekstdə - əlbəttə ki, zəruri və hətta lazımlı bir şey - sonradan məlumatları müqayisə etmək üçün bu kodun harada oxunacağını bilməlisiniz. Ümumiyyətlə nömrə, çıxarılması və sökülməsinə məruz qalmayan bədənin o hissələrində və şassidə göstərilir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading_4">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                        <i class="flaticon-info"></i>Bu istehsalçıdan və istehsal ilindən asılıdır..
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                <div class="card-body">
+                                    Daha müasir modellərdə VIN sürücünün oturacağının döşəməsində, metal bazada və ya sol ön dirəkdə (sürücünün qapısında) tətbiq olunur. Mümkün yer - tablosuna  sol tərəfdə (sürücünün yanında) və ya - mühərrik bölməsində (eynək və ya kabin və mühərrik bölməsi arasındakı bir hissə). Və hələ - sükan sütunu, arxa oturacaq gövdəsi. Gördüyünüz kimi rəqəmlərin mümkün yerləri fərqlidir və səhv edilməməsi üçün bunları bilmək lazımdır.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading_5">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                        <i class="flaticon-info"></i>Niyə VIN-i yoxlamaq lazımdır?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                <div class="card-body">
+                                    Hər bir avtomobilin şərab kodu unikal olduğundan, onun müəyyənləşdirilməsi satış, sığorta, bədbəxt hadisələr və qaçırma hadisələri barədə məlumatlar daxil olmaqla maraqlanan nəqliyyat vasitəsi haqqında maksimum məlumat əldə etməyə imkan verir. Bundan əlavə, VIN, avtomobilin neçə sahibinin olduğunu öyrənmək üçün bir fürsət də verir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq_area_end -->
+
+
+
+    <!-- latest_new_area_start -->
+    <div class="latest_new_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>
+                            Ən son xəbərlər
+                        </h3>
+                        <p>
+                            İnformasiya texnologiyalarının inkişafı əsrində vin-kodu verilənlər bazası üzrə yoxlamaq çətinlik yaratmayacaq. ABŞ-dan Bakıya gətirilmiş istənilən maşının tarixini indi onlayn yoxlamaq mümkündür!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/1524726703_az_vin.jpg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması  </a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/download.jpeg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması</a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/1474223969_kondicioner_v_mashine.jpg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması </a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+    <!-- latest_new_area_end -->
+
+
+    <!-- footer -->
+      {% block footer %}
+        {% include "footer.html" %}
+     {% endblock footer %}
+    
+    <!-- footer -->
+    <!-- link that opens popup -->
+
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <span style="color:#fd2a31;font-size:35px;">Vin</span><span style="font-size:35px;">Code</span>
+                    </a>
+                </div>
+                <h3>Daxil ol</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Email daxil et">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Parol daxil et">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_green">Daxil ol</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="doen_have_acc">Hesabin yoxdur? <a class="dont-hav-acc" href="#test-form2">Qeydiyyatdan keç</a>
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- form itself end-->
+    <form id="test-form2" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <span style="color:#fd2a31;font-size:35px;">Coder</span><span style="font-size:35px;">Vin</span>
+                    </a>
+                </div>
+                <h3>Qeydiyyat</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Email daxil et">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Parol daxil et">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="Password" placeholder="Parolu yenidən yaz">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_green">Qeydiyyatdan keç</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+
+<!-- online -->
+
+<div id="openModal-abouttt" class="modalDialog">
+        <div >
+           <a href="#close" title="Close" class="close">X</a>
+           online ode
+         </div>
+     </div>
+<!-- nagd -->
+     <div id="openModal-aboutttnagd" class="modalDialog">
+        <div >
+           <a href="#close" title="Close" class="close">X</a>
+           nagd ode
+         </div>
+     </div>
+
+    <!-- JS here -->
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js'%}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js'%}"></script>
+    <script src="{% static 'js/popper.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'js/ajax-form.js'%}"></script>
+    <script src="{% static 'js/waypoints.min.js'%}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js'%}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'js/scrollIt.js'%}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js'%}"></script>
+    <script src="{% static 'js/wow.min.js'%}"></script>
+    <script src="{% static 'js/nice-select.min.js'%}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js'%}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'js/plugins.js'%}"></script>
+    <script src="{% static 'js/gijgo.min.js'%}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'js/contact.js'%}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js'%}"></script>
+    <script src="{% static 'js/jquery.form.js'%}"></script>
+    <script src="{% static 'js/jquery.validate.min.js'%}"></script>
+    <script src="{% static 'js/mail-script.js'%}"></script>
+
+
+    <script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>

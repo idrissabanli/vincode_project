@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% load static %}  
+{% block content %}
+
+{% block link %}
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+<script src="https://kit.fontawesome.com/89ccb926bc.js" crossorigin="anonymous"></script>
+<!-- CSS here -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/vin_product.css' %}">
+{% endblock link %}
+<div class="bradcam_area breadcam_bg overlay2">
+  <h3>Vin haqqında</h3>
+</div>
+<br>
+<br>
+
+   {% if data %}
+              
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="galleryy">
+        <div class="img-sekil"> {% if data.auctions.0.images.0 %}
+              {% comment %} <img class="main_img" src="{{data.auctions.0.images.0}}" alt=""> {% endcomment %}
+              {% for img  in data.auctions.0.images  %}
+                <img  class="gallery iiiimg"   src="{{img}}" alt="">
+                
+              {% endfor %}
+      {% else %}
+        <img class="main_img" src="https://www.amulyamica.com/files/noimage.jpg" alt="">
+      {% endif %}
+          </div>
+     
+         
+  </div>
+    </div>
+
+  </div>  
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">+</th>
+          <td>Marka</td>
+          <td>{{data.decoder.make}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+            <td>Model</td>
+            <td>{{data.decoder.model}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+            <td>Trim</td>
+            <td>{{data.decoder.trim}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+            <td>Növü</td>
+            <td>{{data.decoder.style}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+            <td>Oturacaqlar</td>
+            <td>{{data.decoder.standardSeating}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+          <td>Yürüş</td>
+          <td>{{data.decoder.highwayMileage}}</td>
+        <tr>
+          <th scope="row">+</th>
+          <td>Mekan</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Mühərrik</td>
+          <td>{{data.decoder.engine}}</td>
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Yanacaq Tutumu</td>
+          <td>{{data.decoder.fuelTank}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Ümumi Hündürlüyü</td>
+          <td>{{data.decoder.height}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Ümumi Uzunluğu</td>
+          <td>{{data.decoder.length}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Ümumi Eni</td>
+          <td>{{data.decoder.width}}</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">+</th>
+          <td>Buraxılış ili</td>
+          <td>{{data.decoder.year}}</td>
+        </tr>
+        {% if data.auctions.0 %}
+        
+        
+        <tr>
+          <th scope="row">+</th>
+          <td>Təmir qiyməti</td>
+          <td>{{data.auctions.0.repair_cost}}</td>
+        </tr>
+          <tr>
+            <th scope="row">+</th>
+          <td>Ünvan</td>
+          <td>{{data.auctions.0.location}}</td>
+        </tr>
+        <tr>
+            <th scope="row">+</th>
+            <td>Satış vaxtı</td>
+            <td>{{data.auctions.0.sale_date}}</td>
+        </tr>
+        
+        <tr>
+            <th scope="row">+</th>
+            <td>Satış vəziyyəti </td>
+            <td>{{data.auctions.0.condition}}</td>
+        </tr> 
+
+           <tr>
+              <th scope="row">+</th>
+              <td>Rəngi </td>
+              <td>{{data.auctions.0.color}}</td>
+              
+          </tr> 
+          <tr>
+              <th scope="row">+</th>
+              <td>İkinci zədə</td>
+              <td>{{data.auctions.0.secondary_damage}}</td>
+              
+          </tr> 
+        {% endif %}
+           <tr>
+              <th scope="row">+</th>
+              <td>Vin</td>
+              <td>{{data.decoder.vin}}</td>
+          </tr>  
+          <tr>
+              <th scope="row">+</th>
+              <td>Sürətlər qutusu</td>
+              <td>{{data.decoder.steeringType}}</td>
+          </tr> 
+         
+                
+               
+</tbody>
+    </table>
+
+
+ {% if data.recalls.0 %}
+          
+          <div>
+            <p>Qısa məlumat</p>
+            <p> {{data.recalls.0.Summary}}</p>
+          </div>
+
+           <div>
+            <p>Nəticə</p>
+            <p> {{data.recalls.0.Conequence}}</p>
+          </div>
+           <div>
+            <p>Qısa qeydlər</p>
+            <p> {{data.recalls.0.Notes}}</p>
+          </div>
+          {% endif %}
+{% endif %}
+
+
+
+
+
+{% if aze_data %}
+  <div class="gallery">
+      {% if images %}
+              {% for img  in images  %}
+                  <img  src="{{img.image.url}}"  alt="">
+              {% endfor %}
+      {% else %}
+        <img class="main_img"  src="https://www.amulyamica.com/files/noimage.jpg" alt="">
+      {% endif %}
+
+  </div>
+
+
+ <table class="table table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">+</th>
+          <td>Vin code</td>
+          <td>{{aze_data.vin}}</td>
+        </tr>
+
+        <tr>
+          <th scope="row">+</th>
+          <td>Marka</td>
+          <td>{{aze_data.make}}</td>
+        </tr>
+
+        <tr>
+          <th scope="row">+</th>
+          <td>Model</td>
+          <td>{{aze_data.model}}</td>
+        </tr>
+
+        <tr>
+          <th scope="row">+</th>
+          <td>Yürüş</td>
+          <td>{{aze_data.odometr}}</td>
+        </tr>
+
+         <tr>
+          <th scope="row">+</th>
+          <td>Mühərrik</td>
+          <td>{{aze_data.engine}}</td>
+        </tr>
+
+         <tr>
+          <th scope="row">+</th>
+          <td>Buraxış ili</td>
+          <td>{{aze_data.year}}</td>
+        </tr>
+
+         <tr>
+          <th scope="row">+</th>
+          <td>Rəngi</td>
+          <td>{{aze_data.color}}</td>
+        </tr>
+
+
+         <tr>
+          <th scope="row">+</th>
+          <td>Əsas zədə</td>
+          <td>{{aze_data.primary_damage}}</td>
+        </tr>
+
+        <tr>
+          <th scope="row">+</th>
+          <td>ikinci zədə</td>
+          <td>{{aze_data.secondary_damage}}</td>
+        </tr>
+               
+</tbody>
+    </table></div>
+  
+
+
+{% endif %}
+      
+
+{% endblock content %}

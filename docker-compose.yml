@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    restart: "always"
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./nginx/vhost/:/etc/nginx/vhost.d:ro
+      - ./nginx/conf.d/client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf:ro
+      - ./static/:/code/static/
+      - ./media/:/code/media/
+
+
+  web:
+    container_name: "vincode_project"
+    build: .
+    restart: always
+    volumes:
+      - .:/code
+      - ./static/:/code/static/
+      - ./media/:/code/media/
+    environment:
+      - VIRTUAL_HOST=35.194.22.20
+      - VIRTUAL_PORT=8000
+      - TIMEOUT=300
+      - HTTP_PORT=8000
+      - STATS_PORT=8001
+      - LANG=C.UTF-8
+      - LANG en_US.UTF-8
+      - LANGUAGE en_US:en
+      - LC_ALL en_US.UTF-8
+    ports:
+      - 8000:8000
+

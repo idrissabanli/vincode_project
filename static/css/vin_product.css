@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+.galleryy {
+  display: inline!important;
+  width: 100px;
+  
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+
+
+.main_img{
+  width: 100px!important;
+  height: 100px!important;
+  
+}
+.iiiimg {
+  display: inline-block!important;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  float: left;
+ 
+
+}
+.main_img {
+  float: left;
+  
+}
+.extentions {
+  display: flex;
+}
+
+.btn_ext {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #fd2a31;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.table {
+  margin-top: 20px;
+}
+th,
+td {
+  border-bottom: 1px solid lightgrey;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+.contry-vivi {
+  width: 246px;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+/* #icon{
+    margin-left: 50px;
+} */
+/* .input{   
+    border-radius: 50px 50px 50px 50px;
+} */
+.popap {
+  margin-left:10px;
+  margin-top: 79px;
+  float: left;
+}
+
+.vini-a-a {
+  color: aliceblue;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.buttoon{
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  width: 230px;
+}

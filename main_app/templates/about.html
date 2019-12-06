@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block link %}
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <script src="https://kit.fontawesome.com/89ccb926bc.js" crossorigin="anonymous"></script>
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock link %}
+
+
+        {% block content %}
+
+    <!-- bradcam_area_start -->
+    <div class="bradcam_area breadcam_bg overlay2">
+        <h3>Haqqında</h3>
+    </div>
+
+    <!-- about_gallery_wrap_start -->
+    <div class="about_gallery_wrap">
+        <div class="container">
+                <div class="row align-items-center mb-80">
+                        <div class="col-xl-6">
+                            <div class="service_wrap">
+                                <div class="thumb-1">
+                                    <img src="{% static 'img/1524726703_az_vin.jpg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="about_wrap_text_1">
+                                <h3>
+                                    Vin haqqında məlumat
+                                </h3>
+                                <p>VIN-kod – hər bir avtomobilə verilən unikal 17-rəqəmli koddur. Onun köməyi ilə təkcə avtomobilin istehsalçısı haqqında informasiya almaq deyil, həm də onun tarixini, YNH-də iştirakını və digər maraqlı təfsilatları izləmək mümkündür.
+                                        Vin-kodun istifadəsi ban və ya şassinin çətin əl çatan yerlərinə vurulması sayəsində avtomobillərin qaçırılmadan müdafiəsini gücləndirməyə imkan vermişdir.
+                                        
+                                        VIN kod üzrə yoxlama aparmaqla, siz nəqliyyat vasitənizin harada istehsal olunması və yığılması haqqında məlumat əldə edə, onun modeli və buraxılış işi, rəngini, baza komplektasiyasını öyrənə və digər məlumatları ala bilərsiniz. Bundan başqa, vin-kod əsasında maşının olduğu ölkəni tərk etməsi, YNH-də olmasını yoxlamaq olar. Yoxlama nəticəsinin həqiqətlə üst-üstə düşmədiyi halda, sizin qarşısınızda, çox güman ki, qaçırılmış avtomobildir.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3>VIN kodun yoxlanması zərurəti nə zaman yaranır</h3>
+                            <p>İkinci əl bazarda avtomobil alarkən, siz, şəksiz ki, onun vəziyyətini qiymətləndirmək, yürüş məsafəsini və onun əvvəlki tarixini bilmək istəyirsiniz. Məsələn, avtomobilin qəzaya düşməsini, həbslərə məruz qalmasını və s. Xüsusilə də, onun qaçırılması və axtarışda olub olmamasını. Həmçinin, vin-kodu bilmək avtomobil üçün ehtiyat hissələri və komplektləşdiricilərin sifarişi zamanı lazım ola bilər.
+                                </p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <!-- about_gallery_wrap_end -->
+
+
+   
+
+ 
+
+
+        <!-- link that opens popup -->
+    
+        <!-- form itself end-->
+        <form id="test-form" class="white-popup-block mfp-hide">
+            <div class="popup_box ">
+                <div class="popup_inner">
+                    <div class="logo text-center">
+                        <a href="#">
+                            <span style="color:#fd2a31;font-size:35px;">Coder</span><span style="font-size:35px;">Vin</span>
+                        </a>
+                    </div>
+                    <h3>Daxil ol</h3>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12">
+                                <input type="email" placeholder="Email daxil et">
+                            </div>
+                            <div class="col-xl-12 col-md-12">
+                                <input type="password" placeholder="Parol daxil et">
+                            </div>
+                            <div class="col-xl-12">
+                                <button type="submit" class="boxed_btn_green">Daxil ol</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="doen_have_acc">Hesabin yoxdur? <a class="dont-hav-acc" href="#test-form2">Qeydiyyatdan keç</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+        <!-- form itself end -->
+    
+        <!-- form itself end-->
+        <form id="test-form2" class="white-popup-block mfp-hide">
+            <div class="popup_box ">
+                <div class="popup_inner">
+                    <div class="logo text-center">
+                        <a href="#">
+                            <span style="color:#fd2a31;font-size:35px;">Coder</span><span style="font-size:35px;">Vin</span>
+                        </a>
+                    </div>
+                    <h3>Qeydiyyat</h3>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12">
+                                <input type="email" placeholder="Email daxil et">
+                            </div>
+                            <div class="col-xl-12 col-md-12">
+                                <input type="password" placeholder="Parol daxil et">
+                            </div>
+                            <div class="col-xl-12 col-md-12">
+                                <input type="Password" placeholder="Parolu yenidən yaz">
+                            </div>
+                            <div class="col-xl-12">
+                                <button type="submit" class="boxed_btn_green">Qeydiyyatdan keç</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+        <!-- form itself end -->
+    
+    
+
+        {% endblock content %}
+
+
+    <!-- form itself end -->

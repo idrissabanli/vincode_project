@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+.gallery {
+  margin: 10px 50px;
+  width: 700px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  float: left;
+}
+.main_img {
+  float: left;
+  width: 300px !important;
+  height: 260px !important;
+}
+.extentions {
+  display: flex;
+}
+
+.btn_ext {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #fd2a31;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.table {
+  margin-top: 20px;
+}
+th,
+td {
+  border-bottom: 1px solid lightgrey;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+.contry-vivi {
+  width: 246px;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+/* #icon{
+    margin-left: 50px;
+} */
+/* .input{   
+    border-radius: 50px 50px 50px 50px;
+} */
+.popap {
+  margin-right: 377px;
+  margin-top: 79px;
+  float: left;
+}
+
+.vini-a-a {
+  color: aliceblue;
+}

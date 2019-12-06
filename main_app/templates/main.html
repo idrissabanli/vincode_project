@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="slider_area">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="slider_text text-center">
+                            <div class="region">
+                                <button class="buttoon azerbaycan">Azərbaycan avtomobilləri</button>
+                                <button class="buttoon america">Amerika avtomobilləri</button>
+                            </div>
+                          
+                            <div class="find_dowmain">
+                                <form action="/data/" method='POST' class="find_dowmain_form">
+										{% csrf_token %}
+							        <input type="text" name='vincode' placeholder="Avtomobilin vincodun daxil edin...">
+                                    <button  type="submit">Axtar</button>
+                                </form>
+                            </div>
+                            <!-- <button  class="onlayn ode"><a class="a-color-white" href="#openModal-abouttt"> Onlayn ödə</a></button>
+                            <button class="nagd ode"><a class="a-color-white" href="#openModal-aboutttnagd"> Nəğd ödə</a></button> -->
+                        </div>
+                    </div>
+                    <div class="popap"><h4><a class="vini-a-a" href="#openModal-about"> Vincode avtomobilinizdə haradadır?</a></h4></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!-- slider_area_end -->
+
+    <!-- core_features_start -->
+    <div class="core_features">
+        <div class="container">
+            <div class="border-bottm">
+                <div class="row">
+
+                    <div class="col-xl-6 col-md-6">
+
+                    </div>
+                </div>
+            </div>
+       
+  <div class="row">
+                <div class="col-xl-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon"><i class="flaticon-browser"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Xüsusiyyətlər
+                                            </h4>
+                                            <p>Vin vastəsiylə maşının bütün tarixinə baxmaq mümkündür.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon blue"><i class="flaticon-security"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Rəsmi Əməkdaşlıq
+                                            </h4>
+                                            <p>America ilə rəsmi əməkdaşlıq. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon pink"><i class="flaticon-like"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Gün boyu bütün melumatlar
+                                            </h4>
+                                            <p>Gün boyu sayta daxil olub maşınınız haqqında məlumatlar əldə edə bilərsiz.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon yellow"><i class="flaticon-lock"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Onlayn və ya nağd 
+                                            </h4>
+                                            <p>Vin haqqında məlamatları onlayn və ya nağd ödəniş sistemi ilə edə bilərsiz.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon"><i class="flaticon-browser"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Free Domain for 1st Year
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon blue"><i class="flaticon-security"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Free SSL Certificate
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon pink"><i class="flaticon-like"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                30-Day Money-Back Guarantee
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="single_features">
+                                        <div class="icon yellow"><i class="flaticon-lock"></i></div>
+                                        <div class="features_info">
+                                            <h4>
+                                                Spam Protection
+                                            </h4>
+                                            <p>Our set he for firmament morning sixth subdue darkness creeping gathered
+                                                divide our let god moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- core_features_end -->
+
+    <!-- faq_area_start -->
+    <div class="faq_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="accordion_heading">
+                        <h3>Tez-tez verilən suallar</h3>
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="flaticon-info"></i> Avtomobilin VIN kodunu necə tapmaq olar?
+
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    VIN (və ya - şifrələmədə - Nəqliyyat vasitəsinin şəxsiyyət nömrəsi) - maşınlar haqqında demək olar ki, bütün əsas məlumatları öyrənə biləcəyiniz kod. 17 ədəd və hərfdən ibarətdir.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="flaticon-info"></i>Kodla nə öyrənə bilərsiniz?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion"
+                                >
+                                <div class="card-body">
+                                    Kodunu bilməklə avtomobilin makiyajını və modelini, həmçinin modifikasiyasını, gövdəsinin növünü, qapıların sayını, sürət qutusunun növünü öyrənmək moda olur. Digəri - montaj ölkəsi, istehsal ili, mühərrikin növü və təsviri, digər xüsusiyyətləri. Ümumiyyətlə, satın aldığınız avtomobildə olan bütün əsas məlumatlar.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="flaticon-info"></i> Kod haradadır?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Bu kontekstdə - əlbəttə ki, zəruri və hətta lazımlı bir şey - sonradan məlumatları müqayisə etmək üçün bu kodun harada oxunacağını bilməlisiniz. Ümumiyyətlə nömrə, çıxarılması və sökülməsinə məruz qalmayan bədənin o hissələrində və şassidə göstərilir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading_4">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                        <i class="flaticon-info"></i>Bu istehsalçıdan və istehsal ilindən asılıdır..
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                <div class="card-body">
+                                    Daha müasir modellərdə VIN sürücünün oturacağının döşəməsində, metal bazada və ya sol ön dirəkdə (sürücünün qapısında) tətbiq olunur. Mümkün yer - tablosuna  sol tərəfdə (sürücünün yanında) və ya - mühərrik bölməsində (eynək və ya kabin və mühərrik bölməsi arasındakı bir hissə). Və hələ - sükan sütunu, arxa oturacaq gövdəsi. Gördüyünüz kimi rəqəmlərin mümkün yerləri fərqlidir və səhv edilməməsi üçün bunları bilmək lazımdır.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading_5">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                        <i class="flaticon-info"></i>Niyə VIN-i yoxlamaq lazımdır?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                <div class="card-body">
+                                    Hər bir avtomobilin şərab kodu unikal olduğundan, onun müəyyənləşdirilməsi satış, sığorta, bədbəxt hadisələr və qaçırma hadisələri barədə məlumatlar daxil olmaqla maraqlanan nəqliyyat vasitəsi haqqında maksimum məlumat əldə etməyə imkan verir. Bundan əlavə, VIN, avtomobilin neçə sahibinin olduğunu öyrənmək üçün bir fürsət də verir.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq_area_end -->
+
+
+
+    <!-- latest_new_area_start -->
+    <div class="latest_new_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>
+                            Ən son xəbərlər
+                        </h3>
+                        <p>
+                            İnformasiya texnologiyalarının inkişafı əsrində vin-kodu verilənlər bazası üzrə yoxlamaq çətinlik yaratmayacaq. ABŞ-dan Bakıya gətirilmiş istənilən maşının tarixini indi onlayn yoxlamaq mümkündür!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/1524726703_az_vin.jpg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması  </a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/download.jpeg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması</a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_news">
+                        <div class="thumb">
+                            <a href="#">
+                                <img class="sekil-sizie" src="{% static 'img/1474223969_kondicioner_v_mashine.jpg'%}" alt="">
+                            </a>
+                        </div>
+                        <div class="news_content">
+                           
+                            <h3><a href="#">Avtomobilin VİN-koduna görə yoxlanılması </a></h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %} 
