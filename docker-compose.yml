@@ -24,7 +24,7 @@ services:
       - ./static/:/code/static/
       - ./media/:/code/media/
     environment:
-      - VIRTUAL_HOST=35.194.22.20
+      - VIRTUAL_HOST=35.194.22.20, vincode.az, www.vincode.az
       - VIRTUAL_PORT=8000
       - TIMEOUT=300
       - HTTP_PORT=8000
